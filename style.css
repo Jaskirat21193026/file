@@ -1,0 +1,136 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light grey background */
+}
+
+/* Gradient Background for Navbar */
+header {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 1)); /* Gradient from semi-transparent white to solid white */
+    color: #333333;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    border-radius: 15px;
+}
+
+
+
+
+
+.logo {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333333; /* Dark grey for the logo */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    background-color: #f1f1f1;
+    border-radius: 8px; /* Rounded edges for nav links */
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50; /* Green hover effect */
+    color: white;
+}
+
+/* Gradient Background for Welcome Section */
+#home {
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1)); /* Gradient effect on welcome section */
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+    margin-top: 20px;
+}
+
+#home h1 {
+    font-size: 3.5em;
+    color: #333;
+}
+
+#home p {
+    font-size: 1.5em;
+    color: #666;
+}
+
+.intro-text {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.quiz-info {
+    margin-top: 30px;
+}
+
+#start-quiz-btn {
+    background-color: #333; /* Dark grey background */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.6em;
+    width: 50%;
+    border-radius: 20px; /* Rounded corners */
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+#start-quiz-btn:hover {
+    background-color: #555; /* Lighter grey on hover */
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-top-left-radius: 10px; /* Rounded top corners for footer */
+    border-top-right-radius: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 2.5em;
+    }
+
+    #home p {
+        font-size: 1.2em;
+    }
+
+    #start-quiz-btn {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
